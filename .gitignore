@@ -5,5 +5,7 @@ build/
 temp/
 
 tmp/*
+tmp/uploads/*
 !tmp/.gitkeep
+!tmp/uploads/.gitkeep
 
