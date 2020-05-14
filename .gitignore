@@ -2,8 +2,11 @@
 node_modules/
 build/
 temp/
+coverage/
 
 tmp/*
-!tmp/.gitkeep
+!tmp/uploads
+tmp/uploads/*
 
-coverage/
+!tmp/uploads/.gitkeep
+!tmp/.gitkeep
