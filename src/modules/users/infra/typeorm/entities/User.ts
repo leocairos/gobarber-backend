@@ -36,7 +36,8 @@ class User {
   @Expose({ name: 'avatar_url' })
   getAvatarUrl(): string | null {
     if (!this.avatar) {
-      return null;
+      // return null;
+      return `${process.env.APP_API_URL}/files-default/no-avatar.png`;
     }
 
     switch (uploadConfig.driver) {

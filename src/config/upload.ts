@@ -9,6 +9,7 @@ interface IUploadConfig {
 
   tmpFolder: string;
   uploadsFolder: string;
+  defaultAssetsFolder: string;
 
   multer: {
     storage: StorageEngine;
@@ -27,6 +28,9 @@ export default {
 
   tmpFolder,
   uploadsFolder: path.resolve(tmpFolder, 'uploads'),
+  defaultAssetsFolder: path.resolve(
+    path.resolve(__dirname, '..', '..', 'assets'),
+  ),
 
   multer: {
     storage: multer.diskStorage({
