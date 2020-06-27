@@ -33,7 +33,7 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         key: ${{ secrets.SSH_KEY }}
         source: ".,!node_modules"
-        target: "~/app/gobarber-backend"
+        target: "/home/deploy/app/gobarber-backend/"
     
     # Install dependence, run migration and restart service (pm2)
     - name: Install dependence, run migration and restart service (pm2) on Digital Ocean
